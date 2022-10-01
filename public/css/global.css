@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+/* font-family: 'Michroma', sans-serif; */
+
+:root {
+    --main-background-color-dark: #2d303b;
+    --main-background-color-light: #e0e0e0;
+    --box-shadow1-neumorph-dark: #262932;
+    --box-shadow2-neumorph-dark: #343744;
+    --box-shadow1-neumorph-light: #bebebe;
+    --box-shadow2-neumorph-light: #ffffff;
+    --dark-theme-text-color: #e0e0e0;
+    --light-theme-text-color: #2d303b;
+    --main-background-color: var(--main-background-color-dark);
+    /* --main-background-color: var(--main-background-color-light); */
+    --main-neumorph-shadow-color1: var(--box-shadow1-neumorph-dark);
+    --main-neumorph-shadow-color2: var(--box-shadow2-neumorph-dark);
+    /* --main-neumorph-shadow-color1: var(--box-shadow1-neumorph-light); */
+    /* --main-neumorph-shadow-color2: var(--box-shadow2-neumorph-light); */
+    --main-text-color: var(--dark-theme-text-color);
+    /* --main-text-color: var(--light-theme-text-color); */
+    --blue-primary: #0d6efd;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--main-background-color);
+}
+
+/* NavBar */
+
+.navbar {
+    background: var(--main-background-color);
+    box-shadow:  0px 7px 14px var(--main-neumorph-shadow-color1);
+}
+.navbar * {
+    color: var(--blue-primary);
+}
+.navbar-brand {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+.brand-picture {
+    aspect-ratio: 1 / 1;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* neomorp */
+    border-radius: 15px;
+    background: var(--main-background-color);
+    box-shadow: inset 7px 7px 14px var(--main-neumorph-shadow-color1),
+                inset -7px -7px 14px var(--main-neumorph-shadow-color2);
+}
+.brand-picture > img {
+    width: calc(100% - 0.5rem);
+    object-fit: cover;
+}
+.brand-name {
+    font-family: 'Michroma', sans-serif;
+}
+.button-switch-theme {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem;
+    color: var(--main-text-color);
+
+    /* neumorph */
+    border-radius: 15px;
+    background: var(--main-background-color);
+    box-shadow:  7px 7px 14px var(--main-neumorph-shadow-color1),
+                -7px -7px 14px var(--main-neumorph-shadow-color2);
+}
+
+.button-switch-theme:hover,
+.button-switch-theme:active {
+
+    /* neumorph */
+    border-radius: 15px;
+    background: var(--main-background-color);
+    box-shadow: inset 7px 7px 14px var(--main-neumorph-shadow-color1),
+                inset -7px -7px 14px var(--main-neumorph-shadow-color2);
+
+}
+
+/* End NavBar */

@@ -1,0 +1,67 @@
+.register-form {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 2rem 0px;
+
+    /* neomorp */
+    border-radius: 15px;    
+    background: var(--main-background-color);
+    box-shadow:  20px 20px 60px var(--main-neumorph-shadow-color1),
+                -20px -20px 60px var(--main-neumorph-shadow-color2);
+}
+
+.register-brand-logo {
+    width: 10rem;
+}
+
+.register-text-desc {
+    color: var(--main-text-color);
+}
+
+.register-form > div {
+    align-self: stretch;
+}
+
+.register-form > div > input {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 1em 2em;
+    color: var(--main-text-color);
+    width: 100%;
+
+    /* neomorp */
+    border-radius: 15px;
+    background: var(--main-background-color);
+    box-shadow: inset 7px 7px 14px var(--main-neumorph-shadow-color1),
+                inset -7px -7px 14px var(--main-neumorph-shadow-color2);
+}
+
+.button-register {
+    border: none;
+    outline: none;
+    background: none;
+    padding: 1em 2em;
+    color: var(--main-text-color);
+
+    /* neumorph */
+    border-radius: 15px;
+    background: var(--main-background-color);
+    box-shadow:  7px 7px 14px var(--main-neumorph-shadow-color1),
+                -7px -7px 14px var(--main-neumorph-shadow-color2);
+}
+
+.button-register:hover,
+.button-register:focus {
+
+    /* neumorph */
+    border-radius: 15px;
+    background: var(--main-background-color);
+    box-shadow: inset 7px 7px 14px var(--main-neumorph-shadow-color1),
+                inset -7px -7px 14px var(--main-neumorph-shadow-color2);
+}
